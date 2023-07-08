@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Flower store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="MainController">
+            <input type="submit" name="action" value="Back to login"/>
+            <input type="submit" name="action" value="Order"/>
+        </form>
+        <a href ="MainController?action=CartPage">Cart</a>
+        <h1>Welcome to our store !</h1>
+        <form action="MainController">
+            <select name="cmbFlower">
+                <option value="F01-Coin Flower-20">Coin Flower 20$</option>
+                <option value="F02-Sun Flower-30">Sun Flower 30$</option>
+                <option value="F03-Daisy Flower-15">Daisy Flower 15$</option>
+                <option value="F04-Rose Flower-50">Rose Flower 50$</option>
+            </select>
+            <select name="cmbQuantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+            <input type="submit" name="action" value="Add"/>
+        </form>
+    </body>
+</html>
